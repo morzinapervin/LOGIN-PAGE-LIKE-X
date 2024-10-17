@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <!-- Link to Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="single-profile.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+        <header class="dashboard-header">
+            <div class="home-notification">
+              <a href="index.html"><i class="fas fa-home"></i></a>
+            </div>
+          </header>
+      <div class="profile-pic-section">
+        <img id="profile-pic" src="blank-profile-picture.png" alt="Profile Picture">
+        <h3 contenteditable="true" id="username">John Doe</h3>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#profile"><i class="fas fa-user"></i> My Profile</a></li>
+        <li><a href="#pet-details"><i class="fas fa-paw"></i> Pet Details</a></li>
+        <li><a href="#reminders"><i class="fas fa-bell"></i> Reminders</a></li>
+        <li><a href="#settings"><i class="fas fa-cog"></i> Settings</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+           
+      <!-- Header Section with Home and Notification Icons -->
+
+        <h2>Welcome, John Doe!</h2> 
+      <section id="profile" class="cards">
+ 
+        <div class="user-info">
+          <h3>Personal Information</h3>
+          <p><strong>Name:</strong> John Doe</p>
+          <p><strong>Email/Phone:</strong> john.doe@example.com</p>
+          <p><strong>Date of Birth:</strong> 01/01/1985</p>
+        </div>
+      </section>
+
+      <section id="pet-details" class="cards">
+        <h3>Your Pet Parrot</h3>
+        <p><strong>Name:</strong> Kiwi</p>
+        <p><strong>Species:</strong> African Grey Parrot</p>
+        <p><strong>Age:</strong> 5 years</p>
+        <button id="add-pet-btn">Add New Parrot</button>
+      </section>
+
+      <section id="reminders" class="cards">
+        <h3>Care Reminders</h3>
+        <ul>
+          <li>Feeding time: 9:00 AM</li>
+          <li>Vet appointment: Oct 21, 2024</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="single-profile.js" defer></script>
+</body>
+</html>
