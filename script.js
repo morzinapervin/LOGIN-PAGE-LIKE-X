@@ -343,7 +343,7 @@ togglePassword.addEventListener('click', function () {
   passwordInput.setAttribute('type', type);
   
   // Toggle the image source based on the type
-  const newImage = type === 'password' ? 'show.jpg' : 'hide.png'; 
+  const newImage = type === 'password' ? 'show.png' : 'hide.png'; 
   togglePassword.setAttribute('src', newImage);
 });
 
